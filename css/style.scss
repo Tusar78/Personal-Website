@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+// Initialize variable 
+$black : #202428;
+$mixpurple : #ec4c7a;
+$pColor : #707070;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+#about-bg {
+    background: url(../images/header-bg.png) no-repeat;
+}
+
+#biography-bg {
+    background: url(../images/biography-bg.png) no-repeat;
+}
+
+.section {
+    width: 100%;
+    padding: 100px 0;    
+
+    .section__about-me {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .section__about-text {
+            width: 47%;
+            h4 {
+                font-size: 26px;
+                color: $black;
+                margin-bottom: 10px;
+            }
+    
+            h2 {
+                font-size: 36px;
+                color: $mixpurple;
+                margin-bottom: 30px;
+            }
+    
+            p {
+                font-size: 14px;
+                color: $pColor;
+                margin-bottom: 20px;
+                line-height: 1.7;
+            }
+    
+            .section__about-me--button {
+                display: inline-block;
+                padding: 10px 25px;
+                background-image: linear-gradient(45deg, #ec5197, #ec4c77);
+                color: #fff;
+                text-transform: uppercase;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+        }        
+    }
+    .section__about-profile {
+        width: 47%;        
+    }
+}
+
+.work-section {
+    width: 100%;
+    padding: 100px 0;
+    background-image: url(../images/latest-work-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .work-section__heading {        
+        margin-bottom: 60px;
+
+        h2 {
+            font-size: 26px;
+            color: $black;
+            text-align: center;
+        }
+    }
+
+    .work-section__work {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .work-section__work--work-image {
+            width: 31%;
+        }
+    }
+}
+
+.feedback-area {
+    width: 100%;
+    padding: 100px 0;
+    background-image: url(../images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .feedback-area__client-said {     
+        h2{
+            font-size: 26px;
+            color: $black;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .feedback-area--client {
+            text-align: center;
+            margin-bottom: 30px;
+
+            h4 {
+                font-size: 18px;
+                color: $black;
+            }
+
+            span {
+                font-size: 14px;
+                color: $pColor;
+            }
+        }
+        
+        p {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .feedback-area--mail {
+            width: 600px;
+            margin: 0 auto;
+            padding: 40px 80px;
+            text-align: center;
+            background-image: linear-gradient(45deg, #ec5197, #ec4c77);
+            border-radius: 10px;
+
+            span {
+                color: #fff;
+                font-size: 14px;
+            }
+
+            h3 {
+                font-size: 22px;
+                color: #fff;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    padding: 20px 0;
+
+    p {
+        text-align: center;
+        color: $pColor;
+
+        a {
+            color: $mixpurple;
+        }
+    }
+}
